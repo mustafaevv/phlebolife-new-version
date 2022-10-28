@@ -1,0 +1,125 @@
+@import "../../themes.scss";
+
+.banner {
+  padding-top: 120px;
+  position: relative;
+  max-height: 80vh;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__left {
+    width: 50%;
+  }
+
+  &__title {
+    color: $text-color;
+    font-weight: 700;
+    font-size: clamp(30px, 7vw, 120px);
+
+    &_item {
+      color: $active-color;
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 60vh;
+    color: $text-color;
+    margin-bottom: 5em;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $text-color;
+    max-width: 60vh;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-top: 50px;
+  }
+
+  &__button {
+    max-width: 210px;
+    width: 100%;
+    border: 2px solid $active-color;
+    border-radius: 11px;
+    background: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: $active-color;
+    cursor: pointer;
+  }
+
+  &__playIcon {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 2px solid $background-primary;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & svg {
+      color: $background-primary;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__right {
+    width: 45%;
+  }
+
+  &__background {
+    position: absolute;
+    background: $background-primary;
+    height: 109vh;
+    width: 550px;
+    z-index: -10;
+    top: -19%;
+    right: 0;
+
+    @media (max-width: 700px) {
+      min-width: 10px;
+      width: 100%;
+      right: -50%;
+    }
+  }
+  &__increment {
+    position: absolute;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    margin-top: -100px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    z-index: 5;
+    bottom: 0;
+    
+  }
+  &__item{
+    text-align: center;
+    padding: 40px 35px;
+    & p {
+      font-size: 50px;
+      color: $active-color;
+      font-weight: bold;
+    }
+  }
+}

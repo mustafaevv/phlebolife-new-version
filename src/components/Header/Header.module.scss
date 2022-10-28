@@ -36,9 +36,12 @@
     background: none;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 
     &_icon {
       color: $active-color;
     }
   }
+
+  
 }
