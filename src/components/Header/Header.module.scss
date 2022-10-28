@@ -1,0 +1,44 @@
+@import "../../themes.scss";
+
+.header {
+  padding: 25px 0;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.5em;
+  }
+
+  &__link {
+    color: $items-color;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.4s color;
+
+    &:hover {
+      color: $active-color;
+    }
+  }
+
+  &__button {
+    width: 135px;
+    color: $text-color;
+    font-size: 18px;
+    border: none;
+    display: flex;
+    background: none;
+    align-items: center;
+    justify-content: space-between;
+
+    &_icon {
+      color: $active-color;
+    }
+  }
+}
